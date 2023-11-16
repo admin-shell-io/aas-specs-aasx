@@ -12,7 +12,7 @@ The specification number is: **IDTA-01005**
 
 Feature requests, reports about inconsistencies, mistakes *etc.* are highly
 welcome! Please [submit a new issue](
-https://github.com/admin-shell-io/aas-specs/issues/new
+https://github.com/admin-shell-io/aas-specs-aasx/issues/new
 ).
 
 If you want to contribute, see [CONTRIBUTING.md](https://github.com/admin-shell-io/aas-specs/blob/master/CONTRIBUTING.md). The same contribution rules apply as for [aas-specs](https://github.com/admin-shell-io/aas-specs)
