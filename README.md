@@ -15,7 +15,7 @@ welcome! Please [submit a new issue](
 https://github.com/admin-shell-io/aas-specs-aasx/issues/new
 ).
 
-If you want to contribute, see [CONTRIBUTING.md](https://github.com/admin-shell-io/aas-specs/blob/master/CONTRIBUTING.md). The same contribution rules apply as for [aas-specs](https://github.com/admin-shell-io/aas-specs)
+If you want to contribute, see [CONTRIBUTING.md](https://github.com/admin-shell-io/aas-specs/blob/master/CONTRIBUTING.md). The same contribution rules apply as for [aas-specs](https://github.com/admin-shell-io/aas-specs).
 
 ## License
 
