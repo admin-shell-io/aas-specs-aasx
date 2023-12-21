@@ -1,4 +1,4 @@
-# IDTA-01005 
+# IDTA-01005 Package File Format (AASX)
 
 Repository of the Specification of the Asset Administration Shell - Part 5: Package File Format (AASX)
 
@@ -21,4 +21,3 @@ If you want to contribute, see [CONTRIBUTING.md](https://github.com/admin-shell-
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](
 https://creativecommons.org/licenses/by/4.0/). 
-t
