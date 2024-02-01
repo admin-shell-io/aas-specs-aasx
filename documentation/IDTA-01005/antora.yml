@@ -1,0 +1,6 @@
+name: IDTA-01005
+title: Specification Asset Administration Shell - Part 5 AASX Package Format
+version: 'snapshot'
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
