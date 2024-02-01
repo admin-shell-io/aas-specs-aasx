@@ -1,0 +1,1 @@
+= image:image1.png[width=100%]

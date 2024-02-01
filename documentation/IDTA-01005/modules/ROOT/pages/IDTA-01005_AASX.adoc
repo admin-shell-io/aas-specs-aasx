@@ -8,8 +8,8 @@ SPDX-License-Identifier: CC-BY-4.0
 
 Illustrations:
 Plattform Industrie 4.0; Anna Salari, Publik. Agentur für Kommunikation GmbH, designed by Publik. Agentur für Kommunikation GmbH
-///
-
+////
+////
 :toc: left
 :toc-title: Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)
 :sectlinks:
@@ -18,8 +18,11 @@ Plattform Industrie 4.0; Anna Salari, Publik. Agentur für Kommunikation GmbH, d
 :favicon: ../../favicon.png
 :imagesdir: images/
 :nofooter:
+////
 
-= image:image1.png[width=100%]
+
+//= image:image1.png[width=100%]
+
 //= Part 5: Package File Format (AASX)
 //:author: IDTA
 //:version-label: Number
