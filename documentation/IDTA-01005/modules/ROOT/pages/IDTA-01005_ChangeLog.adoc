@@ -1,0 +1,29 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+= Changes
+
+== General
+
+This annex lists the changes from version to version of the file exchange format together with major changes in the overall document. Non-backward compatible changes (nc) are marked as such.
+
+== Changes Part 5 V3.0 vs. Part 1 V2.0.1
+
+Major changes:
+
+* CHANGE: document Part 1 split into several separate documents: Part 1 on the metamodel of the AAS, Part 5 on the aasx package exchange format (this document), and others
+* CHANGE: simplified, only one data file (but in different formats, if needed, e.g. data.xml and data.json) and 0..* supplementary files (as referenced in the data file) allowed; one data file may contain several Asset Administration Shells
+* CHANGE: splitting of an Asset Administration Shell is no longer allowed (i.e. relationship type aas-spec-split removed)
+* CHANGE: predefined recommended name "data" for the data file (aasx/aas-spec); the suffix "aas." (i.e. data.aas.xml) is no longer required (now just data.xml) because splitting of files is no longer allowed
+* CHANGE: clause on digital signatures shortened; description of how to sign and what to consider when signing AASX files or content no longer available
+
+Minor changes:
+
+* Update xml examples to follow new version of xml schema

@@ -1,0 +1,27 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+= Background Information
+
+== Selection of the Reference Format for the Asset Administration Shell Package Format
+
+The Open Packaging Conventionsfootnote:[Not to be confused with OPC (Open Platform Communication) of the OPC Foundation. Therefore, we will use the full term “Open Packaging Conventions” instead of the abbreviation “OPC”.] format is used as the reference for the Asset Administration Shell package format definition, due to the following reasons.
+
+* Open Packaging Conventions is an international standard specified in ISO/IEC 29500-2:2012 and ECMA-376.
+* Open Packaging Conventions is based on ZIP (as a package container) and XML (for the description of some internal files and definitions). These two technologies are most widely used in their respective domains and are also addressed for long-term archiving.
+* Open Packaging Conventions can be used as package for non-Office applications, too (there are many examples available, such as NuGet, FDI packages, etc.). It provides a logical model independent from how the files are stored in the package. This logical model can be expanded to any sort of application.
+* Open Packaging Conventions is also used in the scope of Industry (e.g. FDI packages) and currently in discussion as possible container format for some FDT® and ODVA Project xDS™ use cases.
+* Open Packaging Conventions (and Open Document Format packages) supports digital signing. It can be done for individual files inside of the package. Encryption is not specified in Open Packaging Conventions (it only mentions what shall not be done). Nevertheless, encryption is possible (see points).
+* There are some APIs to handle Open Packaging Conventions packages (Windows API, .NET, Java, etc.) that do not require much knowledge on the technical specification.
+* Open Packaging Conventions encourages chunking, i.e. splitting files into small chunks. This is favorable for reducing the effect of file corruption and better for data access.
+* Some international organizations (e.g. EU, NATO, etc.) recommend using Open Document Format (ISO/IEC 26300-3) instead. However, this recommendation is related to the formats used specifically in Office applications.
+* The Office Open XML and Open Packaging Conventions specifications originated from the Microsoft Corporation and were later standardized as ISO/IEC 29500 and ECMA-376. Current and future versions of ISO/IEC 29500 and ECMA-376 are covered by Microsoft's Open Specification Promise, whereby Microsoft "irrevocably promises" not to assert any claims against those making, using, and selling conforming implementations of any specification covered by the promise (so long as those accepting the promise refrain from suing Microsoft for patent infringement in relation to Microsoft's implementation of the covered specification) link:#bib1[[1\]].
+* Office Open XML (including the Open Packaging Conventions format) and Open Document Format are politically conflicting formats (see details in link:#bib2[[2\]] and link:#bib3[[3\]]). Choosing Open Packaging Conventions as the option for storing the Asset Administration Shell information had only technical reasons based on the arguments mentioned here.
+* Open Packaging Conventions was chosen in favor of iiRDS (v1.0). The scope of iiRDS might not be aligned with the requirements of the Asset Administration Shell, i.e. iiRDS is mainly a format for storing technical documentation of industry devices based on ontology concepts.

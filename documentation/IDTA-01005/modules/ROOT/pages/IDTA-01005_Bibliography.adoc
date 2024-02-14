@@ -1,0 +1,51 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+[bibliography]
+= Bibliography
+
+[#bib1]
+[1] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Open Packaging Conventions (Office Open XML)", ISO 29500-2:2008-2012, 2012. [Online]. Available: https://www.loc.gov/preservation/digital/formats/fdd/fdd000363.shtml
+
+[#bib2]
+[2] "Standardization of Office Open XML", Wikipedia. Accessed: 2019-01-26 [Online]. Available: https://en.wikipedia.org/wiki/Standardization_of_Office_Open_XML
+
+[#bib3]
+[3] "OpenDocument standardization", Wikipedia. Accessed: 2019-01-26 [Online]. Available: https://en.wikipedia.org/wiki/OpenDocument_standardization
+
+[#bib4]
+[4] "The Digital Signing Framework of the Open Packaging Conventions". Accessed: 2019-01-26. [Online]. Available: https://msdn.microsoft.com/en-us/library/aa905326.aspx
+
+[#bib5]
+[5] "Open Packaging Conventions Fundamentals". Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/windows/desktop/dd742818(v=vs.85).aspx
+
+[#bib6]
+[6] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Document Container File: Core (based on ZIP 6.3.3)". Accessed: 2019-01-26. [Online]. Available: https://www.loc.gov/preservation/digital/formats/fdd/fdd000361.shtml
+
+[#bib7]
+[7] "System.IO.Packaging Namespace", MSDN, Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/system.io.packaging(v=vs.110).aspx
+
+[#bib8]
+[8] T. Preston-Werner "Semantic Versioning". Version 2.0.0. Accessed: 2020-11-13. [Online]. Available: https://semver.org/spec/v2.0.0.html
+
+[#bib9]
+[9] "Details of the Asset Administration Shell – The exchange of information between partners in the value chain of Industrie 4.0". [Online]. Available: https://industrialdigitaltwin.org/en/content-hub
+
+[#bib10]
+[10] "Details of the Asset Administration Shell – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces". [Online]. Available: https://industrialdigitaltwin.org/en/content-hub
+
+[#bib11]
+[11] "Asset Administration Shell. Reading Guide". Plattform Industrie 4.0 in cooperation with IDTA. November 2020. [Online]. Available: https://industrialdigitaltwin.org/wp-content/uploads/2022/02/AAS-ReadingGuide_202201.pdf
+
+[#bib12]
+[12] "Secure Download Service", Discussion Paper. Oct. 2020, Plattform Industrie 4.0. [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html
+
+[#bib13]
+[13] IEC 63278-1 "Asset Administration Shell for industrial applications – Part 1: Asset Administration Shell structure". 95/925/CDV

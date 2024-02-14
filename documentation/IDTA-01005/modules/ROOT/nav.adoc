@@ -10,7 +10,14 @@ Illustrations:
 Plattform Industrie 4.0; Anna Salari, Publik. Agentur für Kommunikation GmbH, designed by Publik. Agentur für Kommunikation GmbH
 ////
 
+* xref:IDTA-01005_Introduction.adoc[Introduction]
 * xref:IDTA-01005_AASX.adoc[Specification]
+* xref:IDTA-01005_SummaryOutlook.adoc[Summary and Outlook]
+* xref:./Annex/nav_annex.adoc[Annex]
+** xref:./Annex/IDTA-01005_Background.adoc[Background]
+* xref:IDTA-01005_ChangeLog.adoc[Change Log]
+* xref:IDTA-01005_Bibliography.adoc[Bibliography]
+
 
 
 
