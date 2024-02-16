@@ -194,7 +194,7 @@ The source of any aasx-suppl relationship must be the file containing the AAS st
 Using the ECMA-376 relationships (see Clause 0) allows to locate files within the AASX package independently from the file name. For example, one package producer might store an aas-spec file in /aasx/device.xml, the other one in /asset-admin-shell/productX123.xml, but both use the same relationship type to target that file. To have a more consistent approach, the following conventions are defined for naming files inside the AASX package:
 
 * */aasx/* shall be the common prefix for all files containing AASX package specific information,
-* */aasx/aasx-origin* shall be the target of the aasx-origin relationship without content (empty file),
+* */aasx/aasx-origin* shall be the target of the aasx-origin relationship without content (empty file or a plain text file containing the text "Intentionally empty"),
 * */aasx/data.<extension>* shall be the target of the aas-spec relationship, where <__extension__> is "xml" or "json", based on the type of serialization,
 * a serialization of the same data in both serialization formats (xml, json) stored in the same AASX package might also exist; they can be stored in parallel using the aforementioned extensions and appropriate ECMA-376 Content Types (MIME type) and require the creation of the appropriate aas-suppl relationships for both of these files, targeting the supplementary files.
 
