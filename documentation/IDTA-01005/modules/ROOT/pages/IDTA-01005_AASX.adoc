@@ -38,9 +38,9 @@ The Asset Administration Shell Package (AASX) format is derived from the Open Pa
 * file extension for the AASX format *.aasx*,
 * MIME-type for the AASX format: application/asset-administration-shell-packagefootnote:[The current MIME-type is provisory and needs to be requested officially.],
 * *icon* for the AASXfootnote:[No official icon for aasx extension available so far.],
-* identification of the AASX format by the file extension and content (MIME) type, which can be identified content-wise when reading the first relationship file /_rels/.rels (as defined in Open Packaging Conventions) and looking for a relationship type *http://admin-shell.io/aasx/relationships/aasx-origin* (which is the entry point for the logical model of the Asset Administration Shell),
+* identification of the AASX format by the file extension and content (MIME) type, which can be identified content-wise when reading the first relationship file /_rels/.rels (as defined in Open Packaging Conventions) and looking for a relationship type *\http://admin-shell.io/aasx/relationships/aasx-origin* (which is the entry point for the logical model of the Asset Administration Shell),
 * note that the following paths and filenames in the package are already reserved by the Open Packaging Conventions specification and shall therefore not be used for any derivative format: /[Content_Types].xml; /_rels/.rels; /_<file_path>_/_rels/_<filename>_.rels (where <__filename__> is a file in the package that is source of relationships and _<file_path>_ is the path to that file),
-* the AASX format does not have to be opened in any existing Office Open XML / Open Packaging Conventions compatible Office application (e.g. Microsoft Office, LibreOffice), because the required relationships and files for the different office "models" may not be present (e.g. http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument for "docx" document).
+* the AASX format does not have to be opened in any existing Office Open XML / Open Packaging Conventions compatible Office application (e.g. Microsoft Office, LibreOffice), because the required relationships and files for the different office "models" may not be present (e.g. \http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument for "docx" document).
 
 ==  ECMA-376 Relationships
 
@@ -57,8 +57,8 @@ The following name spaces are defined:
 [cols="18%,82%",options="header"]
 |===
 |*Namespace* |*Value*
-|<rel> |http://schema.openxmlformats.org/package/2006/relationships
-|<rel_aas> |http://admin-shell.io/aasx/relationships
+|<rel> |\http://schema.openxmlformats.org/package/2006/relationships
+|<rel_aas> |\http://admin-shell.io/aasx/relationships
 |===
 
 Each relationship typefootnote:[To avoid the long names of the relationship types, the short name is used in the text.] as denoted in Figure 7 is described in the following.
