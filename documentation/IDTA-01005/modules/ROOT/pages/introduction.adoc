@@ -96,7 +96,7 @@ The leading use case in this document is the exchange of an Asset Administration
 
 <<use-case-file-exchange>> shows the overall picture. It depicts two value chain partners. "Supplier" is going to provide some products, "Integrator" is going to utilize these products to build a machine. Two kinds of Administration Shells are provided: one for the asset with the type of a product (A1, B1 and C1 for the machine), one for the assets with the actual product instances (D1 and D4). The aim is to provide engineering information to the integrator that can be imported into the integrator's engineering system.
 
-The Asset Administration Shells are not necessarily exported "as is". Instead, some filtering depending on the access and usage policies can be applied before export (see Clause 4.2. The same can happen on the integrator’s side. Not all provided information will necessarily be imported. This is why packages A2 and A3 are distinguished from the original A1 Asset Administration Shell for the product type. The same accounts for B1 and D1. D4 is the composite instance of product type C1.
+The Asset Administration Shells are not necessarily exported "as is". Instead, some filtering depending on the access and usage policies can be applied before export (see <<filtering-export-import>>. The same can happen on the integrator’s side. Not all provided information will necessarily be imported. This is why packages A2 and A3 are distinguished from the original A1 Asset Administration Shell for the product type. The same accounts for B1 and D1. D4 is the composite instance of product type C1.
 
 In <<file-exchange-two-partners>>, it is assumed that import does not need additional filtering.
 
@@ -104,21 +104,22 @@ In <<file-exchange-two-partners>>, it is assumed that import does not need addit
 [[use-case-file-exchange]]
 image::use-case-file-exchange.jpeg[]
 
-"Supplier" and "Integrator" form two independent legal bodies (<<file-exchange-two-partners>>). The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.
+"Supplier" and "Integrator" form two independent legal bodies (<<file-exchange-two-partners>>).The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.
 
-The exchange of files needs to fulfil some requirements with respect to usability and security link:#bib12[[12\]]. A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files. Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.
+The exchange of files needs to fulfil some requirements with respect to usability and security link:#bib12[[12\]].A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files.Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.
 
 .File Exchange between two Value Chain Partners
 [[file-exchange-two-partners]]
 image::file-exchange-two-partners.jpg[]
 
-For usability sake, a container format is used for file exchange and a corresponding structure is defined. This predefined structure helps the consumer to understand the content of the single files. The container may contain auxiliary files referenced by the AAS or even executable code.
+For usability sake, a container format is used for file exchange and a corresponding structure is defined.This predefined structure helps the consumer to understand the content of the single files.The container may contain auxiliary files referenced by the AAS or even executable code.
 
+[#filtering-export-import]
 === Filtering of Information in Export and Import
 
 When exchanging information from partner A to partner B, two use cases may apply.
 
-* The producer of information only wants to submit certain parts of the information. The information might vary depending on the specific consumer it is submitted to. This requires a filtering mechanism, which allows to individually shape the information for the specific consumer.
+* The producer of information only wants to submit certain parts of the information.The information might vary depending on the specific consumer it is submitted to.This requires a filtering mechanism, which allows to individually shape the information for the specific consumer.
 * The consumer of information does not want to include all information provided by the producer in his own process, i.e. he wants to filter only the relevant information.
 +
 .Example Filtering for Export and Import
