@@ -43,7 +43,7 @@ The Asset Administration Shell Package (AASX) format is derived from the Open Pa
 * note that the following paths and filenames in the package are already reserved by the Open Packaging Conventions specification and shall therefore not be used for any derivative format: /[Content_Types].xml; /_rels/.rels; /_<file_path>_/_rels/_<filename>_.rels (where <__filename__> is a file in the package that is source of relationships and _<file_path>_ is the path to that file),
 * the AASX format does not have to be opened in any existing Office Open XML / Open Packaging Conventions compatible Office application (e.g. Microsoft Office, LibreOffice), because the required relationships and files for the different office "models" may not be present (e.g. \http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument for "docx" document).
 
-==  ECMA-376 Relationships
+== ECMA-376 Relationships
 
 <<aasx-rels>> defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format. In addition (not shown in <<aasx-rels>>), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside of the package).
 
@@ -221,7 +221,7 @@ In addition to the AASX specific files, files common to all ECMA-376 packages �
 [[aasx-file-structure]]
 image::aasx-file-structure.png[]
 
-==  Digital Signatures
+== Digital Signatures
 
 A digital signing feature is already provided by the Open Packaging ­­­­Conventions specification link:#bib4[[4\]]. Hence, this signing framework for packages can also be used for AASX packages. To ensure the integrity of the AAS data, all relevant files within the package (aasx-origin file, AAS structure specification file, supplementary files) and the associated relationship parts shall be signed.
 

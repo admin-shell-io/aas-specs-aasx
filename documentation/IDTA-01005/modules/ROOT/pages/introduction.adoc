@@ -28,7 +28,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 . SHOULD NOT This phrase, or the phrase "NOT RECOMMENDED", mean that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label.
 . MAY This word, or the adjective "OPTIONAL", mean that an item is truly optional. One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein, an implementation which does include a particular option MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)
 
-===  Scope of this Document
+=== Scope of this Document
 
 The aim of this document is to define selected specifications of the structure of the Administration Shell to enable the meaningful exchange of information about assets between partners in a value creation network.
 
@@ -50,7 +50,7 @@ Please consult the continuously updated reading guide link:#bib11[[11\]] for an 
 
 [ISO/IEC 29500-2] ISO/IEC 29500-2. Document description and processing languages — Office Open XML file formats — Part 2: Open packaging conventions
 
-===  Structure of the Document
+=== Structure of the Document
 
 Clause 2 provides terms and definitions as well as abbreviations, both for abbreviations used in the document and for abbreviations that may be used for elements of the metamodel defined in this document.
 
