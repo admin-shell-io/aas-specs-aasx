@@ -17,7 +17,7 @@ This document (version 3.0) is the continuation of the definition of the AASX Pa
 
 This document was produced from September 2022 to January 2023 by the sub working group "Asset Administration Shell" of the joint working group of the Plattform Industrie 4.0 working group "Reference Architectures, Standards and Norms" and the "Open Technology" working group of the Industrial Digital Twin Association (IDTA). It is the first version published by the IDTA.
 
-This specification is versioned using https://semver.org/spec/v2.0.0.html[Semantic Versioning 2.0.0] (semver) and follows the semver specification link:#bib8[[8\]].
+This specification is versioned using https://semver.org/spec/v2.0.0.html[Semantic Versioning 2.0.0] (semver) and follows the semver specification xref:bibliography.adoc#bib8[[8\]].
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in https://tools.ietf.org/html/bcp14[BCP 14] https://tools.ietf.org/html/rfc2119[RFC2119] https://tools.ietf.org/html/rfc8174[RFC8174]footnote:[https://www.ietf.org/rfc/rfc2119.txt]:
 
@@ -42,7 +42,7 @@ This document assumes familiarity with the metamodel of the Asset Administration
 
 The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way. Additionally, the content can also be used as input for discussions with international standardization organizations and further collaborations.
 
-Please consult the continuously updated reading guide link:#bib11[[11\]] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.
+Please consult the continuously updated reading guide xref:bibliography.adoc#bib11[[11\]] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.
 
 === Normative References
 
@@ -73,16 +73,16 @@ The bibliography can be found in Annex C.
 
 == Introduction
 
-The document series "Details of the Asset Administration Shell" specifies the different needs of implementing Asset Administration Shells in an Industry 4.0 environment. A corresponding IEC series is in development, see link:#bib13[[13\]].
+The document series "Details of the Asset Administration Shell" specifies the different needs of implementing Asset Administration Shells in an Industry 4.0 environment. A corresponding IEC series is in development, see xref:bibliography.adoc#bib13[[13\]].
 
 Besides a technology-neutral specification of the information model in UML, several different formats are provided to exchange Asset Administration Shells: XML, JSON, RDF, AutomationML, as well as an OPC UA information model.
 
 <<aas-info-exchange-types>> shows the different ways of exchanging information via Asset Administration Shells. This part of the "Details of the Asset Administration Shell" series, Part 5, deals with type 1: file exchange. The following steps need to be executed to enable an exchange between partners:
 
-. definition of the Asset Administration Shell in a selected format, for example XML (see link:#bib9[[9\]]),
+. definition of the Asset Administration Shell in a selected format, for example XML (see xref:bibliography.adoc#bib9[[9\]]),
 . selecting the additional files that are referenced in submodels of the Asset Administration Shell and should also be exchanged,
 . provision of the Asset Administration Shell together with the selected files in a standardized exchange format, the AASX package format as specified in this document,
-. defining a secure way to exchange the file, for example via secure file download on a web server link:#bib12[[12\]].
+. defining a secure way to exchange the file, for example via secure file download on a web server xref:bibliography.adoc#bib12[[12\]].
 
 .Part 5: File Exchange Type of Information Exchange via Asset Administration Shells
 [[aas-info-exchange-types]]
@@ -106,7 +106,7 @@ image::use-case-file-exchange.jpeg[]
 
 "Supplier" and "Integrator" form two independent legal bodies (<<file-exchange-two-partners>>).The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.
 
-The exchange of files needs to fulfil some requirements with respect to usability and security link:#bib12[[12\]].A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files.Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.
+The exchange of files needs to fulfil some requirements with respect to usability and security xref:bibliography.adoc#bib12[[12\]].A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files.Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.
 
 .File Exchange between two Value Chain Partners
 [[file-exchange-two-partners]]
@@ -146,6 +146,6 @@ The packaging model specified by the Open Packaging Conventions describes *packa
 
 Relationships are defined to connect the package to files, and to connect various files in the package. The definition of the relationships (along with the files’ names) is the *logical model* of the package. The resource, i.e. a source of a relationship, must be either the package itself or a data component (file) inside of the package. The target resource of a relationship can be any URI-addressable resource inside or outside of the package. It is possible to have more than one relationship that share the same target file (see example 9–6 in ISO/IEC 29500-2: 2012).
 
-The *physical model* maps these logical concepts to a physical format. The result of this mapping is a physical package format (a ZIP archive format) in which files appear in a directory-like hierarchy (adapted from link:#bib4[[4\]] and link:#bib5[[5\]]).
+The *physical model* maps these logical concepts to a physical format. The result of this mapping is a physical package format (a ZIP archive format) in which files appear in a directory-like hierarchy (adapted from xref:bibliography.adoc#bib4[[4\]] and xref:bibliography.adoc#bib5[[5\]]).
 
 
