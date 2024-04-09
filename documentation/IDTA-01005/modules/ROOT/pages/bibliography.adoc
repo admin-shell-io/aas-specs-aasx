@@ -11,28 +11,41 @@ SPDX-License-Identifier: CC-BY-4.0
 [bibliography]
 = Bibliography
 
-* [[[locOpenPackaging, 1]]] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Open Packaging Conventions (Office Open XML)", ISO 29500-2:2008-2012, 2012. [Online]. Available: https://www.loc.gov/preservation/digital/formats/fdd/fdd000363.shtml
+[#bib1]
+[1] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Open Packaging Conventions (Office Open XML)", ISO 29500-2:2008-2012, 2012. [Online]. Available: https://www.loc.gov/preservation/digital/formats/fdd/fdd000363.shtml
 
-* [[[wikipediaStandardizationOffice, 2]]] "Standardization of Office Open XML", Wikipedia. Accessed: 2019-01-26 [Online]. Available: https://en.wikipedia.org/wiki/Standardization_of_Office_Open_XML
+[#bib2]
+[2] "Standardization of Office Open XML", Wikipedia. Accessed: 2019-01-26 [Online]. Available: https://en.wikipedia.org/wiki/Standardization_of_Office_Open_XML
 
-* [[[wikipediaOpenDocumentStandardization, 3]]] "OpenDocument standardization", Wikipedia. Accessed: 2019-01-26 [Online]. Available: https://en.wikipedia.org/wiki/OpenDocument_standardization
+[#bib3]
+[3] "OpenDocument standardization", Wikipedia. Accessed: 2019-01-26 [Online]. Available: https://en.wikipedia.org/wiki/OpenDocument_standardization
 
-* [[[microsoftDigitalSigning, 4]]] "The Digital Signing Framework of the Open Packaging Conventions". Accessed: 2019-01-26. [Online]. Available: https://msdn.microsoft.com/en-us/library/aa905326.aspx
+[#bib4]
+[4] "The Digital Signing Framework of the Open Packaging Conventions". Accessed: 2019-01-26. [Online]. Available: https://msdn.microsoft.com/en-us/library/aa905326.aspx
 
-* [[[microsoftOpenPackaging, 5]]] "Open Packaging Conventions Fundamentals". Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/windows/desktop/dd742818(v=vs.85).aspx
+[#bib5]
+[5] "Open Packaging Conventions Fundamentals". Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/windows/desktop/dd742818(v=vs.85).aspx
 
-* [[[locDocumentContainer, 6]]] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Document Container File: Core (based on ZIP 6.3.3)". Accessed: 2019-01-26. [Online]. Available: https://www.loc.gov/preservation/digital/formats/fdd/fdd000361.shtml
+[#bib6]
+[6] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Document Container File: Core (based on ZIP 6.3.3)". Accessed: 2019-01-26. [Online]. Available: https://www.loc.gov/preservation/digital/formats/fdd/fdd000361.shtml
 
-* [[[microsoftSystemIOPackagingNamespace, 7]]] "System.IO.Packaging Namespace", MSDN, Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/system.io.packaging(v=vs.110).aspx
+[#bib7]
+[7] "System.IO.Packaging Namespace", MSDN, Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/system.io.packaging(v=vs.110).aspx
 
-* [[[semverSemanticVersioning, 8]]] T. Preston-Werner "Semantic Versioning". Version 2.0.0. Accessed: 2020-11-13. [Online]. Available: https://semver.org/spec/v2.0.0.html
+[#bib8]
+[8] T. Preston-Werner "Semantic Versioning". Version 2.0.0. Accessed: 2020-11-13. [Online]. Available: https://semver.org/spec/v2.0.0.html
 
-* [[[idta01001, 9]]] IDTA-01001 "Specification of the Asset Administration Shell. Part 1: Metamodel". Industrial Digital Twin Assocation. [Online]. Available: https://industrialdigitaltwin.org/en/content-hub
+[#bib9]
+[9] IDTA-01001 "Specification of the Asset Administration Shell. Part 1: Metamodel". Industrial Digital Twin Assocation. [Online]. Available: https://industrialdigitaltwin.org/en/content-hub
 
-* [[[idta01002, 10]]] IDTA-01002 "Specification of the Asset Administration Shell. Part 2: Application Programming Interfaces". Industrial Digital Twin Assocation.  [Online]. Available: https://industrialdigitaltwin.org/en/content-hub/aasspecifications
+[#bib10]
+[10] IDTA-01002 "Specification of the Asset Administration Shell. Part 2: Application Programming Interfaces". Industrial Digital Twin Assocation.  [Online]. Available: https://industrialdigitaltwin.org/en/content-hub/aasspecifications
 
-* [[[aasReadingGuide, 11]]] "Asset Administration Shell. Reading Guide". Industrial Digital Twin Association. [Online]. Available: https://industrialdigitaltwin.org/en/content-hub/downloads
+[#bib11]
+[11] "Asset Administration Shell. Reading Guide". Industrial Digital Twin Association. [Online]. Available: https://industrialdigitaltwin.org/en/content-hub/downloads
 
-* [[[secureDownloadService, 12]]] "Secure Download Service", Discussion Paper. Oct. 2020, Plattform Industrie 4.0. [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html
+[#bib12]
+[12] "Secure Download Service", Discussion Paper. Oct. 2020, Plattform Industrie 4.0. [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html
 
-* [[[iec63278-1, 13]]] IEC 63278-1:2023 "Asset Administration Shell for industrial applications – Part 1: Asset Administration Shell structure"
+[#bib13]
+[13] IEC 63278-1:2023 "Asset Administration Shell for industrial applications – Part 1: Asset Administration Shell structure" 
