@@ -23,51 +23,56 @@ Some use cases make it necessary to exchange the full or partial structure of th
 * provision of digital signatures and encryption capabilities,
 * policies for authenticity and integration of package filesfootnote:[Role-based policies to access this package are not defined, as this is a feature of the systems that host the AASs (see Part 4 Security of the document series).].
 
-The following process in Figure 6 is defined for creating and consuming AASX packages.
+The following process in <<aasx-package-gen-and-use>> is defined for creating and consuming AASX packages.
 
 .Process for Generating and Consuming AASX Packages
-image::image7.jpeg[]
+[[aasx-package-gen-and-use]]
+image::aasx-package-gen-and-use.jpeg[]
 
 The process starts by serializing the existing AAS (e.g. D1 and E1) into files (according to the serialization mechanisms described in this document), as well as exporting other supplementary files (i.e. files mentioned in the structure of the AAS, such as manuals, CAD files, etc.). All these files will be packaged together into the AASX ZIP file format and will be followed by several security steps that define the policies for modifiability, encryption, and digital signing of the files inside the AASX. The final AASX can then be transported from the AASX producer (in this case partner A) to the AASX consumer (partner B) via digital media such as e-mail, USB stick, etc. The consumer first needs to validate and verify the incoming AASX, unpack the contained files, and import them to generate the new AAS in the consumer environment. The process will be explained in detail in the following sub-sections.
 
 == Conventions for the Asset Administration Shell Package File Format (AASX)
 
-The Asset Administration Shell Package (AASX) format is derived from the Open Package Conventions standards, consequently inheriting its characteristics. Nevertheless, some conventions are defined for the AASX:
+The Asset Administration Shell Package (AASX) format is derived from the Open Package Conventions standards, consequently inheriting its characteristics.Nevertheless, some conventions are defined for the AASX:
 
 * package format and rules according to ISO/IEC 29500-2:2012; any derivate format from this standard (such as the AASX format) requires the definition of a logical model, a physical model, and a security model; the specific conventions are described in the next subsections.
 * file extension for the AASX format *.aasx*,
 * MIME-type for the AASX format: application/asset-administration-shell-packagefootnote:[The current MIME-type is provisory and needs to be requested officially.],
 * *icon* for the AASXfootnote:[No official icon for aasx extension available so far.],
-* identification of the AASX format by the file extension and content (MIME) type, which can be identified content-wise when reading the first relationship file /_rels/.rels (as defined in Open Packaging Conventions) and looking for a relationship type *http://admin-shell.io/aasx/relationships/aasx-origin* (which is the entry point for the logical model of the Asset Administration Shell),
+* identification of the AASX format by the file extension and content (MIME) type, which can be identified content-wise when reading the first relationship file /_rels/.rels (as defined in Open Packaging Conventions) and looking for a relationship type *\http://admin-shell.io/aasx/relationships/aasx-origin* (which is the entry point for the logical model of the Asset Administration Shell),
 * note that the following paths and filenames in the package are already reserved by the Open Packaging Conventions specification and shall therefore not be used for any derivative format: /[Content_Types].xml; /_rels/.rels; /_<file_path>_/_rels/_<filename>_.rels (where <__filename__> is a file in the package that is source of relationships and _<file_path>_ is the path to that file),
-* the AASX format does not have to be opened in any existing Office Open XML / Open Packaging Conventions compatible Office application (e.g. Microsoft Office, LibreOffice), because the required relationships and files for the different office "models" may not be present (e.g. http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument for "docx" document).
+* the AASX format does not have to be opened in any existing Office Open XML / Open Packaging Conventions compatible Office application (e.g. Microsoft Office, LibreOffice), because the required relationships and files for the different office "models" may not be present (e.g. \http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument for "docx" document).
 
-==  ECMA-376 Relationships
+[#ecma-376-rels]
+== ECMA-376 Relationships
 
-Figure 7 defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format. In addition (not shown in Figure 7), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside of the package).
+<<aasx-rels>> defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format.In addition (not shown in <<aasx-rels>>), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside of the package).
 
 .Relationship Types for AASX Packages (Logical Model)
-image::image8.png[]
+[[aasx-rels]]
+image::aasx-rels.png[]
 
-The relationship types for thumbnail, core-properties, digital-signatures (origin, signature and certificate) are defined by Open Packaging Conventions. The other relationship types were specifically defined to support the AASX package format.
+The relationship types for thumbnail, core-properties, digital-signatures (origin, signature and certificate) are defined by Open Packaging Conventions.The other relationship types were specifically defined to support the AASX package format.
 
 The following name spaces are defined:
 
-[.table-with-appendix-table]
 [cols="18%,82%",options="header"]
 |===
 |*Namespace* |*Value*
-|<rel> |http://schema.openxmlformats.org/package/2006/relationships
-|<rel_aas> |http://admin-shell.io/aasx/relationships
+|<rel> |\http://schema.openxmlformats.org/package/2006/relationships
+|<rel_aas> |\http://admin-shell.io/aasx/relationships
 |===
 
-Each relationship typefootnote:[To avoid the long names of the relationship types, the short name is used in the text.] as denoted in Figure 7 is described in the following.
+Each relationship typefootnote:[To avoid the long names of the relationship types, the short name is used in the text.] as denoted in <<aasx-rels>> is described in the following.
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |*Relationship Type* |
 |*Source File of Relationship Type:* |*--*
 |*Namespace:* |*<rel>*
 |===
+[.appendix-table]
 [cols="30%,10%,60%",options="header"]
 |===
 |*Relationship Type* |*Card.* |*Description*
@@ -88,7 +93,7 @@ Required if you need to sign files and relationships inside the package. Their r
 
 
 ====
-Note: see Clause 5.5 on digital signatures for more information.
+Note: see <<digital-signatures>> for more information.
 ====
 
 
@@ -106,6 +111,7 @@ It is the entry point for all aas specific relationships and files inside the pa
 |*Source File of Relationship Type:* |*<rel>/digital-signature/origin*
 |*Namespace:* |*<rel>* |
 |===
+[.appendix-table]
 [cols="30%,10%,60%", options="header"]
 |===
 |*Relationship Type* |*Card.* |*Description*
@@ -114,7 +120,7 @@ Required if you need to sign files and relationships inside the package. Their r
 
 
 ====
-Note: see Clause 5.5 on digital signatures for more information.
+Note: see <<digital-signatures>> for more information.
 ====
 
 
@@ -127,6 +133,7 @@ Note: see Clause 5.5 on digital signatures for more information.
 |*Source File of Relationship Type:* |*<rel>/digital-signature/signature*
 |*Namespace:* |*<rel>* |
 |===
+[.appendix-table]
 [cols="30%,10%,60%", options="header"]
 |===
 |*Relationship Type* |*Card.* |*Description*
@@ -135,7 +142,7 @@ Required if you need to sign files and relationships inside the package. Their r
 
 
 ====
-Note: see Clause 5.5 on digital signatures for more information.
+Note: see <<digital-signatures>> for more information.
 ====
 
 
@@ -148,6 +155,7 @@ Note: see Clause 5.5 on digital signatures for more information.
 |*Source File of Relationship Type:* |*<rel_aas>/aasx-origin*
 |*Namespace:* |*<rel_aas>* |
 |===
+[.appendix-table]
 [cols="30%,10%,60%", options="header"]
 |===
 |*Relationship Type* |*Mandatory* |*Description*
@@ -167,21 +175,23 @@ Typical formats contained are XML and/or JSON.
 |*Source File of Relationship Type:* |*<rel_aas>/aas-spec*
 |*Namespace:* |*<rel_aas>* |
 |===
+[.appendix-table]
 [cols="30%,10%,60%", options="header"]
 |===
 |*Relationship Type* |*Mandatory* |*Description*
 |*aas-suppl* |0..1 a|
 Targets any additional file, which is referenced from within the data of an AAS via a relative URI reference in the _File_ submodel element.
 
+====
+Note 1: the internal relative paths shall be relative to the parent directory of the _rels folder (see ISO/IEC 29500-2).
+====
 
 ====
-Note 1: blobs as defined via submodel Element _Blob_ are not stored as supplemental files within the package.
+Note 2: blobs as defined via submodel Element _Blob_ are not stored as supplemental files within the package.
 ====
 
-
-
 ====
-Note 2: not every _File_ element inside the specification of an Submodel may target a file stored within the same AASX package. Only a relative URI reference shall be interpreted as a reference to a supplementary file within the AASX package. The path within the .rels file of the Open Package Conventions container can be a relative or absolute Open Package Conventions path.
+Note 3: not every _File_ element inside the specification of an Submodel may target a file stored within the same AASX package. Only a relative URI reference shall be interpreted as a reference to a supplementary file within the AASX package. The path within the .rels file of the Open Package Conventions container can be a relative or absolute Open Package Conventions path.
 ====
 
 
@@ -189,36 +199,39 @@ The source of any aasx-suppl relationship must be the file containing the AAS st
 
 |===
 
-== File Name Conventions
+== File Structure and File Name Conventions
 
-Using the ECMA-376 relationships (see Clause 0) allows to locate files within the AASX package independently from the file name. For example, one package producer might store an aas-spec file in /aasx/device.xml, the other one in /asset-admin-shell/productX123.xml, but both use the same relationship type to target that file. To have a more consistent approach, the following conventions are defined for naming files inside the AASX package:
+Using the ECMA-376 relationships (see <<ecma-376-rels>>) allows to locate files within the AASX package independently from the file name. For example, one package producer might store an aas-spec file in /aasx/device.xml, the other one in /asset-admin-shell/productX123.xml, but both use the same relationship type to target that file. To have a more consistent approach, the following conventions are defined for naming files inside the AASX package:
 
-* */aasx/* shall be the common prefix for all files containing AASX package specific information,
-* */aasx/aasx-origin* shall be the target of the aasx-origin relationship without content (empty file),
-* */aasx/data.<extension>* shall be the target of the aas-spec relationship, where <__extension__> is "xml" or "json", based on the type of serialization,
-* a serialization of the same data in both serialization formats (xml, json) stored in the same AASX package might also exist; they can be stored in parallel using the aforementioned extensions and appropriate ECMA-376 Content Types (MIME type) and require the creation of the appropriate aas-suppl relationships for both of these files, targeting the supplementary files.
+* *aasx/* shall be the common folder for all files containing AASX package specific information,
+* *aasx/aasx-origin* shall be the target of the aasx-origin relationship without content (empty file or a plain text file containing the text "Intentionally empty"),
+* *aasx/data.<extension>* should be the target of the aas-spec relationship, where <__extension__> is for example "xml" or "json", based on the type of serialization,
+* a serialization of the same data in several serialization formats (for example xml and json) stored in the same AASX package might also exist; they can be stored in parallel using the aforementioned extensions and appropriate ECMA-376 Content Types (MIME type) and require the creation of the appropriate *aas-suppl* relationships for both of these files, targeting the supplementary files.
 
-Figure 9 shows the overall physical model, i.e. the file structure of an AASX package. The folder "suppl" is empty in this example or not shown. The corresponding files contained in the folder "suppl" would be referenced in the data.xml.rels and data.json.rels files. The file "Thumbnail.png" is referenced in file ".rels" as target for relationship with type "metadata/thumbnail".
+<<aasx-file-structure>> shows the overall physical model, i.e. the file structure of an AASX package. The folder "suppl" is empty in this example or not shown. The corresponding files contained in the folder "suppl" would be referenced in the data.xml.rels and data.json.rels files. The file "Thumbnail.png" is referenced in file ".rels" as target for relationship with type "metadata/thumbnail".
 
-Figure 8 shows an example of an AASX package focusing on the specific aasx part including AAS examples. It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in Figure 7 and follows the file name conventions as defined above. In this example, it is assumed that the AAS specification files are serialized in XML. The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description. Three files are referenced within the submodels; they are added to the package in the folder suppl. The files can be referenced from both AAS, i.e. from both submodels. The same accounts for the concept description that can be used in both submodels. The submodels can be part of both AAS, if needed.
+<<logical-to-physical-map>> shows an example of an AASX package focusing on the specific aasx part including AAS examples. It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in <<aasx-rels>> and follows the file name conventions as defined above. In this example, it is assumed that the AAS specification files are serialized in XML. The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description. Three files are referenced within the submodels; they are added to the package in the folder suppl. The files can be referenced from both AAS, i.e. from both submodels. The same accounts for the concept description that can be used in both submodels. The submodels can be part of both AAS, if needed.
 
 .Example of Mapping Logical (right) to Physical Model (left)
-image::image9.png[]
+[[logical-to-physical-map]]
+image::logical-to-physical-map.png[]
 
-In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive. For more information on these files, please refer to the ECMA-376 specification.
+In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive.For more information on these files, please refer to the ECMA-376 specification.
 
 .AASX File Structure (Physical Model)
-image::image10.png[]
+[[aasx-file-structure]]
+image::aasx-file-structure.png[]
 
-==  Digital Signatures
+[#digital-signatures]
+== Digital Signatures
 
-A digital signing feature is already provided by the Open Packaging ­­­­Conventions specification link:#bib4[[4\]]. Hence, this signing framework for packages can also be used for AASX packages. To ensure the integrity of the AAS data, all relevant files within the package (aasx-origin file, AAS structure specification file, supplementary files) and the associated relationship parts shall be signed.
+A digital signing feature is already provided by the Open Packaging ­­­­Conventions specification xref:bibliography.adoc#bib4[[4\]].Hence, this signing framework for packages can also be used for AASX packages.To ensure the integrity of the AAS data, all relevant files within the package (aasx-origin file, AAS structure specification file, supplementary files) and the associated relationship parts shall be signed.
 
 == Encryption
 
-The Open Packaging Conventions specification (ISO/IEC 29500-2:2012) mentions that "ZIP-based packages shall not include encryption as described in the ZIP specification. Package implementers shall enforce this restriction [M3.9]"footnote:[The reason might be related to the transparency requirement for the package format as well as license requirements of PKWARE. For ISO/IEC 21320-1 (Document Container File: Core), the following statement applies: “Encryption of individual files and of the central directory is prohibited. Hence this profile of ZIP_PK is more transparent than its parent format.” link:#bib6[[6\]]]. However, an Open Packaging Conventions package may be encrypted with other means and some applications, which use this package format as the basis for a more specific format, may use encryption during interchange or DRM for distribution link:#bib1[[1\]].
+The Open Packaging Conventions specification (ISO/IEC 29500-2:2012) mentions that "ZIP-based packages shall not include encryption as described in the ZIP specification.Package implementers shall enforce this restriction [M3.9]"footnote:[The reason might be related to the transparency requirement for the package format as well as license requirements of PKWARE. For ISO/IEC 21320-1 (Document Container File: Core), the following statement applies: “Encryption of individual files and of the central directory is prohibited. Hence this profile of ZIP_PK is more transparent than its parent format.” xref:bibliography.adoc#bib6[[6\]]].However, an Open Packaging Conventions package may be encrypted with other means and some applications, which use this package format as the basis for a more specific format, may use encryption during interchange or DRM for distribution xref:bibliography.adoc#bib1[[1\]].
 
-An example is the Office Document Cryptography Structure (MS-OFFCRYPTO) used by derivate office formats. Some technologies used may be covered by patents from Microsoft and are therefore not recommended for the AASX format. Digital Rights Management (DRM) can also be used to encrypt content elements in a package with specific access rights granted to authorize users (see the implementation in the system.io.packaging namespace link:#bib7[[7\]]).
+An example is the Office Document Cryptography Structure (MS-OFFCRYPTO) used by derivate office formats.Some technologies used may be covered by patents from Microsoft and are therefore not recommended for the AASX format.Digital Rights Management (DRM) can also be used to encrypt content elements in a package with specific access rights granted to authorize users (see the implementation in the system.io.packaging namespace xref:bibliography.adoc#bib7[[7\]]).
 
 Regarding encryption and confidentiality, the following rules shall be followed.
 

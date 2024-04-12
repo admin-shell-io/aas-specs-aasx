@@ -12,7 +12,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 This document (Part 5 of the document series "Details of the Asset Administration Shell") defines the AASX package file format for file exchange of Administration Shells based on the Open Package Conventions.
 
-Additional parts of the document series cover (see link:#bib10[[10\]]):
+Additional parts of the document series cover (see xref:bibliography.adoc#bib10[[10\]]):
 
 * the information meta model of the Asset Administration Shell (Part 1),
 * interfaces and APIs for accessing the information of Asset Administration Shells (access, modify, query, and execute information and active functionality; Part 2),
