@@ -13,7 +13,7 @@ Plattform Industrie 4.0; Anna Salari, Publik. Agentur für Kommunikation GmbH, d
 * xref:introduction.adoc[Introduction]
 * xref:aasx.adoc[Specification]
 * xref:summary-and-outlook.adoc[Summary and Outlook]
-* xref:./annex/background.adoc[Annex]
+* xref:./annex/nav_annex.adoc[Annex]
 ** xref:./annex/background.adoc[Background]
 * xref:changelog.adoc[Change Log]
 * xref:bibliography.adoc[Bibliography]
