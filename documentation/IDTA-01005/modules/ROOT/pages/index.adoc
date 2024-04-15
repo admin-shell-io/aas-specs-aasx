@@ -1,2 +1,52 @@
-== Specification of the Asset Administration Shell
 = Part 5: Package File Format (AASX)
+
+*Specification of the Asset Administration Shell*
+
+====
+This specification is part of the https://industrialdigitaltwin.org/en/content-hub/aasspecifications[Asset Administration Shell Specification series].
+====
+
+== Version
+This is version 3.1 of the specification IDTA-01005.
+
+Previous version: 3.0.1
+
+== Notice
+
+Publisher:  Industrial Digital Twin Association e.V. (IDTA)
+
+IDTA Document Number: IDTA-01005-3-1
+
+This work is licensed under a
+https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License].
+
+SPDX-License-Identifier: CC-BY-4.0
+
+== How to Get in Contact
+
+Contact: https://industrialdigitaltwin.org/en/contact[IDTA]
+
+Sources: https://github.com/admin-shell-io/aas-specs-aasx[github]
+
+Feedback:
+
+* https://github.com/admin-shell-io/aas-specs-aasx/issues/new/choose[new issues, bugs]
+
+* https://github.com/admin-shell-io/questions-and-answers[Questions and Answers]
+
+== Editorial Notes
+
+This document (version 3.1) is the continuation of the definition of the AASX Package Exchange Format that was originally part of Part 1 of the document series "Details of the Asset Administration Shell". Part 1 was splitted after V3.0RC02. Part 5 (this document) now focuses on the file exchange format AASX.
+
+This document was produced from September 2022 to January 2023 by the sub working group "Asset Administration Shell" of the joint working group of the Plattform Industrie 4.0 working group "Reference Architectures, Standards and Norms" and the "Open Technology" working group of the Industrial Digital Twin Association (IDTA). It is the first version published by the IDTA.
+
+This specification is versioned using https://semver.org/spec/v2.0.0.html[Semantic Versioning 2.0.0] (semver) and follows the semver specification xref:bibliography.adoc#bib8[[8\]].
+
+The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in https://tools.ietf.org/html/bcp14[BCP 14] https://tools.ietf.org/html/rfc2119[RFC2119] https://tools.ietf.org/html/rfc8174[RFC8174]footnote:[https://www.ietf.org/rfc/rfc2119.txt]:
+
+[arabic]
+. MUST This word, or the terms "REQUIRED" or "SHALL", mean that the definition is an absolute requirement of the specification.
+. MUST NOT This phrase, or the phrase "SHALL NOT", mean that the definition is an absolute prohibition of the specification.
+. SHOULD This word, or the adjective "RECOMMENDED", mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.
+. SHOULD NOT This phrase, or the phrase "NOT RECOMMENDED", mean that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label.
+. MAY This word, or the adjective "OPTIONAL", mean that an item is truly optional. One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein, an implementation which does include a particular option MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)

@@ -1,0 +1,71 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+= Basic Concepts and Leading Picture
+
+== Leading Picture
+
+The leading use case in this document is the exchange of an Asset Administration Shell including all its auxiliary documents and artifacts from one value chain partner to another. This document does not deal with the use case of already deployed Asset Administration Shells running in a specific infrastructure, but only with the file exchange between partners.
+
+<<use-case-file-exchange>> shows the overall picture. It depicts two value chain partners. "Supplier" is going to provide some products, "Integrator" is going to utilize these products to build a machine. Two kinds of Administration Shells are provided: one for the asset with the type of a product (A1, B1 and C1 for the machine), one for the assets with the actual product instances (D1 and D4). The aim is to provide engineering information to the integrator that can be imported into the integrator's engineering system.
+
+The Asset Administration Shells are not necessarily exported "as is". Instead, some filtering depending on the access and usage policies can be applied before export (see <<filtering-export-import>>. The same can happen on the integrator’s side. Not all provided information will necessarily be imported. This is why packages A2 and A3 are distinguished from the original A1 Asset Administration Shell for the product type. The same accounts for B1 and D1. D4 is the composite instance of product type C1.
+
+In <<file-exchange-two-partners>>, it is assumed that import does not need additional filtering.
+
+.Use Case File Exchange between Value Chain Partners
+[[use-case-file-exchange]]
+image::use-case-file-exchange.jpeg[]
+
+"Supplier" and "Integrator" form two independent legal bodies (<<file-exchange-two-partners>>).The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.
+
+The exchange of files needs to fulfil some requirements with respect to usability and security xref:bibliography.adoc#bib12[[12\]].A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files.Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.
+
+.File Exchange between two Value Chain Partners
+[[file-exchange-two-partners]]
+image::file-exchange-two-partners.jpg[]
+
+For usability sake, a container format is used for file exchange and a corresponding structure is defined.This predefined structure helps the consumer to understand the content of the single files.The container may contain auxiliary files referenced by the AAS or even executable code.
+
+[#filtering-export-import]
+== Filtering of Information in Export and Import
+
+When exchanging information from partner A to partner B, two use cases may apply.
+
+* The producer of information only wants to submit certain parts of the information.The information might vary depending on the specific consumer it is submitted to.This requires a filtering mechanism, which allows to individually shape the information for the specific consumer.
+* The consumer of information does not want to include all information provided by the producer in his own process, i.e. he wants to filter only the relevant information.
++
+.Example Filtering for Export and Import
+[[export-import-filter]]
+image::export-import-filter.jpg[]
+
+As an example (see <<export-import-filter>>), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.
+
+
+====
+Note: in the use case described above, (i.e. the exchange of information via sharing of xml files, etc.), the information that is not intended for submission needs to be extracted from the corresponding xml files before delivery or before import, respectively. Role or attribute-based access control does not fit this use case. The corresponding access policies might help filtering the corresponding information, but they cannot be submitted as part of the file exchanged.
+====
+
+
+<<example-info-filter>> shows an example, where the defined xml format is used as defined in this document. The German translation shall not be submitted, only English language is provided to partner B.
+
+.Example Filtering of Information in XML
+[[example-info-filter]]
+image::example-info-filter.jpg[]
+
+== Basic Concepts of the Open Packaging Conventions
+
+The packaging model specified by the Open Packaging Conventions describes *packages*, *parts*, and *relationships*. Packages hold parts, which hold content and resources, such as *files* footnote:[The term “file” will be used instead of “part”.]. Every file in a package has a unique URI-compliant file name along with a specified content-type expressed in the form of a MIME media type.
+
+Relationships are defined to connect the package to files, and to connect various files in the package. The definition of the relationships (along with the files’ names) is the *logical model* of the package. The resource, i.e. a source of a relationship, must be either the package itself or a data component (file) inside of the package. The target resource of a relationship can be any URI-addressable resource inside or outside of the package. It is possible to have more than one relationship that share the same target file (see example 9–6 in ISO/IEC 29500-2: 2012).
+
+The *physical model* maps these logical concepts to a physical format. The result of this mapping is a physical package format (a ZIP archive format) in which files appear in a directory-like hierarchy (adapted from xref:bibliography.adoc#bib4[[4\]] and xref:bibliography.adoc#bib5[[5\]]).
+
+
