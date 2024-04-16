@@ -1,0 +1,12 @@
+= Part 5: Package File Format (AASX)
+
+*Specification of the Asset Administration Shell*
+
+====
+This specification is part of the https://industrialdigitaltwin.org/en/content-hub/aasspecifications[Asset Administration Shell Specification series].
+====
+
+NOTE: We do not provide a web version of the specification for version 3.0.1.
+Please download and use the PDF version of the document instead.
+
+link:https://industrialdigitaltwin.org/wp-content/uploads/2023/04/IDTA-01005-3-0_SpecificationAssetAdministrationShell_Part5_AASXPackageFileFormat.pdf[Download the specification in PDF format]
