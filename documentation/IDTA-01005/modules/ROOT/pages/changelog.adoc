@@ -19,6 +19,8 @@ This annex lists the changes from version to version of the file exchange format
 Major Changes:
 
 * CHANGE: aasx/data.<extension> is only a recommendation (change from shall to should) (https://github.com/admin-shell-io/aas-specs-aasx/issues/10[#10])
+* CHANGE: support both relationship paths: `\http://admin-shell.io/aasx/relationships` (as specified and recommended)
+and (deprecated) `\http://www.admin-shell.io/aasx/relationships`  (https://github.com/admin-shell-io/aas-specs-aasx/issues/2[#2])
 
 Minor Changes:
 
