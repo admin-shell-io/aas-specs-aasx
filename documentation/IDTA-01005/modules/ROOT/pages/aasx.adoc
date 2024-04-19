@@ -44,7 +44,7 @@ The Asset Administration Shell Package (AASX) format is derived from the Open Pa
 * the AASX format does not have to be opened in any existing Office Open XML / Open Packaging Conventions compatible Office application (e.g. Microsoft Office, LibreOffice), because the required relationships and files for the different office "models" may not be present (e.g. `\http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument` for "docx" document).
 
 ====
-The following relationship path is deprecated: `\http://wwww.admin-shell.io/aasx/relationships`
+The following relationship path is deprecated: `\http://www.admin-shell.io/aasx/relationships`
 ====
 
 [#ecma-376-rels]
