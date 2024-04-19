@@ -20,6 +20,8 @@ This annex lists the changes from version to version of the file exchange format
 Major Changes:
 
 * CHANGE: aasx/data.<extension> is only a recommendation (change from shall to should) (https://github.com/admin-shell-io/aas-specs-aasx/issues/10[#10])
+* CHANGE: support both relationship paths: `\http://admin-shell.io/aasx/relationships` (as specified and recommended)
+and (deprecated) `\http://www.admin-shell.io/aasx/relationships`  (https://github.com/admin-shell-io/aas-specs-aasx/issues/2[#2])
 * CHANGE: Terms and Definitions adopted to IEC 63278-1:2023 (before IEC 63278-1 Draft July 2022 was the basis), 
 (https://github.com/admin-shell-io/aas-specs/issues/365[#365])
 also abbreviations partly adopted; changes:
