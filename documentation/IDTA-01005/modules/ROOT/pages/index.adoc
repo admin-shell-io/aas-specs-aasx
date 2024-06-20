@@ -38,7 +38,7 @@ Feedback:
 
 === History
 
-This version, version 3.1, was produced from February 2023 to May 2024 by the Workstream "Specifications of the Asset Administration Shell" of the "Open Technology" working group of the Industrial Digital Twin Association (IDTA). 
+This version, version 3.1, was produced from February 2023 to June 2024 by the Workstream "Specifications of the Asset Administration Shell" of the "Open Technology" working group of the Industrial Digital Twin Association (IDTA). 
 
 Version 3.0 of this document is the continuation of the definition of the AASX Package Exchange Format that was originally part of Part 1 of the document series "Details of the Asset Administration Shell". Part 1 was splitted after V3.0RC02. Part 5 (this document) now focuses on the file exchange format AASX.
 
