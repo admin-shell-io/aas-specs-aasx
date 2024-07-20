@@ -19,7 +19,7 @@ In this case, a file format must be defined that can hold and store this informa
 Therefore, a package file format for the Asset Administration Shell (AASX) is defined based on the following requirements:
 
 * generic package file format to include the Asset Administration Shell structure, data, and other related files,
-* main use cases are the exchange between organizations/partners and storage/persistency of the Asset Administration Shells’ information,
+* main use cases are the exchange between organizations/partners and storage/persistence of the Asset Administration Shells’ information,
 * the package format shall be usable by everyone without any legal restrictions or royalties; the format should preferably be based on an international standard with high guarantees of future maintainability,
 * existence of APIs to create, read, and write packages of this format,
 * provision of digital signatures and encryption capabilities,
@@ -56,7 +56,7 @@ The following relationship path is deprecated: `\http://www.admin-shell.io/aasx/
 [#ecma-376-rels]
 == ECMA-376 Relationships
 
-<<aasx-rels>> defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format.In addition (not shown in <<aasx-rels>>), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside of the package).
+<<aasx-rels>> defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format.In addition (not shown in <<aasx-rels>>), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside the package).
 
 .Relationship Types for AASX Packages (Logical Model)
 [[aasx-rels]]
@@ -264,7 +264,7 @@ A digital signing feature is already provided by the Open Packaging Conventions 
 == Encryption
 
 The Open Packaging Conventions specification (ISO/IEC 29500-2:2012) mentions that "ZIP-based packages shall not include encryption as described in the ZIP specification.Package implementers shall enforce this restriction [M3.9]"footnote:[The reason might be related to the transparency requirement for the package format as well as license requirements of PKWARE.
-For ISO/IEC 21320-1 (Document Container File: Core), the following statement applies: “Encryption of individual files and of the central directory is prohibited. Hence this profile of ZIP_PK is more transparent than its parent format.” xref:bibliography.adoc#bib6[[6\]]].However, an Open Packaging Conventions package may be encrypted with other means and some applications, which use this package format as the basis for a more specific format, may use encryption during interchange or DRM for distribution xref:bibliography.adoc#bib1[[1\]].
+For ISO/IEC 21320-1 (Document Container File: Core), the following statement applies: “Encryption of individual files and of the central directory is prohibited. Hence, this profile of ZIP_PK is more transparent than its parent format.” xref:bibliography.adoc#bib6[[6\]]].However, an Open Packaging Conventions package may be encrypted with other means and some applications, which use this package format as the basis for a more specific format, may use encryption during interchange or DRM for distribution xref:bibliography.adoc#bib1[[1\]].
 
 An example is the Office Document Cryptography Structure (MS-OFFCRYPTO) used by derivate office formats.Some technologies used may be covered by patents from Microsoft and are therefore not recommended for the AASX format.Digital Rights Management (DRM) can also be used to encrypt content elements in a package with specific access rights granted to authorize users (see the implementation in the system.io.packaging namespace xref:bibliography.adoc#bib7[[7\]]).
 

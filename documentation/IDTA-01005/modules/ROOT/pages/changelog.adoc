@@ -25,7 +25,7 @@ Major Changes:
 ** changed: asset
 ** changed: digital representation (example only)
 ** changed: Submodel
-* Transfer from .docx to asciidoc (.adoc) and maintenance in github
+* Transfer from .docx to asciidoc (.adoc) and maintenance in GitHub
 
 Minor Changes:
 

@@ -27,7 +27,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 Contact: https://industrialdigitaltwin.org/en/contact[IDTA]
 
-Sources: https://github.com/admin-shell-io/aas-specs-aasx[github]
+Sources: https://github.com/admin-shell-io/aas-specs-aasx[GitHub]
 
 Feedback:
 

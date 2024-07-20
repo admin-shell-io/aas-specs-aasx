@@ -54,13 +54,13 @@ Available: https://semver.org/spec/v2.0.0.html
 [#bib9]
 [9] IDTA-01001 "Specification of the Asset Administration Shell.
 Part 1: Metamodel".
-Industrial Digital Twin Assocation. [Online].
+Industrial Digital Twin Association. [Online].
 Available: https://industrialdigitaltwin.org/en/content-hub/aasspecifications
 
 [#bib10]
 [10] IDTA-01002 "Specification of the Asset Administration Shell.
 Part 2: Application Programming Interfaces".
-Industrial Digital Twin Assocation.  [Online].
+Industrial Digital Twin Association.  [Online].
 Available: https://industrialdigitaltwin.org/en/content-hub/aasspecifications
 
 [#bib11]

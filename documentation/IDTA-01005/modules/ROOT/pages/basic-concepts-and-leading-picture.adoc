@@ -43,7 +43,7 @@ The exchange of files needs to fulfil some requirements with respect to usabilit
 [[file-exchange-two-partners]]
 image::file-exchange-two-partners.jpg[]
 
-For usability sake, a container format is used for file exchange and a corresponding structure is defined.This predefined structure helps the consumer to understand the content of the single files.The container may contain auxiliary files referenced by the AAS or even executable code.
+For usability’s sake, a container format is used for file exchange and a corresponding structure is defined.This predefined structure helps the consumer to understand the content of the single files.The container may contain auxiliary files referenced by the AAS or even executable code.
 
 [#filtering-export-import]
 == Filtering of Information in Export and Import
