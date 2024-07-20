@@ -14,7 +14,9 @@ SPDX-License-Identifier: CC-BY-4.0
 
 The aim of this document is to define selected specifications of the structure of the Administration Shell to enable the meaningful exchange of information about assets between partners in a value creation network.
 
-This part of the document focuses on how such information needs to be processed and structured. In order to define these specifications, the document formally stipulates some structural principles of the Administration Shell. This part does not describe technical interfaces of the Administration Shell or other systems to exchange information, protocols, or interaction patterns.
+This part of the document focuses on how such information needs to be processed and structured.
+In order to define these specifications, the document formally stipulates some structural principles of the Administration Shell.
+This part does not describe technical interfaces of the Administration Shell or other systems to exchange information, protocols, or interaction patterns.
 
 This document focuses on:
 
@@ -22,15 +24,19 @@ This document focuses on:
 
 This document assumes familiarity with the metamodel of the Asset Administration Shell as described in Part 1 of the document series.
 
-The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way. Additionally, the content can also be used as input for discussions with international standardization organizations and further collaborations.
+The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way.
+Additionally, the content can also be used as input for discussions with international standardization organizations and further collaborations.
 
-Please consult the continuously updated reading guide xref:bibliography.adoc#bib11[[11\]] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.
+Please consult the continuously updated reading guide xref:bibliography.adoc#bib11[[11\]] for an overview of documents on the Asset Administration Shell.
+The reading guide gives advice on which documents should be read depending on the role of the reader.
 
 == Normative References
 
-[ECMA-376] ECMA-376. _Office Open XML file formats._ Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-376/
+[ECMA-376] ECMA-376. _Office Open XML file formats._ Online].
+Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-376/
 
-[ISO/IEC 29500-2] ISO/IEC 29500-2. Document description and processing languages — Office Open XML file formats — Part 2: Open packaging conventions
+[ISO/IEC 29500-2] ISO/IEC 29500-2.
+Document description and processing languages — Office Open XML file formats — Part 2: Open packaging conventions
 
 == Structure of the Document
 
@@ -40,7 +46,9 @@ xref:introduction.adoc[] gives a short introduction into the content of this doc
 
 xref:basic-concepts-and-leading-picture.adoc[] explains some basic concept and the leading picture guiding the usage of the specified file exchange format.
 
-xref:aasx.adoc[] is the normative part of the document. It specifies how the information of one or more Administration Shells can be packed into a compound file format (AASX). Background information with respect to this format can be found in Annex xref:annex/background.adoc[].
+xref:aasx.adoc[] is the normative part of the document.
+It specifies how the information of one or more Administration Shells can be packed into a compound file format (AASX).
+Background information with respect to this format can be found in Annex xref:annex/background.adoc[].
 
 In general, normative clauses are characterized by adding the prefix (normative) to the title of the clause.
 
