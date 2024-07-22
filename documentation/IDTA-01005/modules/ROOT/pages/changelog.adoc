@@ -12,24 +12,20 @@ SPDX-License-Identifier: CC-BY-4.0
 
 == General
 
-This annex lists the changes from version to version of the file exchange format together with major changes in the overall document. Non-backward compatible changes (nc) are marked as such.
-
+This annex lists the changes from version to version of the file exchange format together with major changes in the overall document.
+Non-backward compatible changes (nc) are marked as such.
 
 == Changes V3.1 vs. V3.0.1
 
 Major Changes:
 
-
 * CHANGE: aasx/data.<extension> is only a recommendation (change from shall to should) (https://github.com/admin-shell-io/aas-specs-aasx/issues/10[#10])
-* CHANGE: support both relationship paths: `\http://admin-shell.io/aasx/relationships` (as specified and recommended)
-and (deprecated) `\http://www.admin-shell.io/aasx/relationships`  (https://github.com/admin-shell-io/aas-specs-aasx/issues/2[#2])
-* CHANGE: Terms and Definitions adopted to IEC 63278-1:2023 (before IEC 63278-1 Draft July 2022 was the basis), 
-(https://github.com/admin-shell-io/aas-specs/issues/365[#365])
-also abbreviations partly adopted; changes:
-	** changed: asset
-	** changed: digital representation (example only)
-	** changed: Submodel
-* Transfer from .docx to asciidoc (.adoc) and maintenance in github
+* CHANGE: support both relationship paths: `\http://admin-shell.io/aasx/relationships` (as specified and recommended) and (deprecated) `\http://www.admin-shell.io/aasx/relationships`  (https://github.com/admin-shell-io/aas-specs-aasx/issues/2[#2])
+* CHANGE: Terms and Definitions adopted to IEC 63278-1:2023 (before IEC 63278-1 Draft July 2022 was the basis), (https://github.com/admin-shell-io/aas-specs/issues/365[#365]) also abbreviations partly adopted; changes:
+** changed: asset
+** changed: digital representation (example only)
+** changed: Submodel
+* Transfer from .docx to asciidoc (.adoc) and maintenance in GitHub
 
 Minor Changes:
 
