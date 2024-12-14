@@ -22,7 +22,7 @@ Two kinds of Administration Shells are provided: one for the asset with the type
 The aim is to provide engineering information to the integrator that can be imported into the integrator's engineering system.
 
 The Asset Administration Shells are not necessarily exported "as is".
-Instead, some filtering depending on the access and usage policies can be applied before export (see <<filtering-export-import>>.
+Instead, some filtering depending on the access and usage policies can be applied before export (see Clause <<filtering-export-import>>).
 The same can happen on the integrator’s side.
 Not all provided information will necessarily be imported.
 This is why packages A2 and A3 are distinguished from the original A1 Asset Administration Shell for the product type.
