@@ -228,7 +228,7 @@ To have a more consistent approach, the following conventions are defined for na
 
 * *aasx/* shall be the common folder for all files containing AASX package specific information,
 * *aasx/aasx-origin* shall be the target of the aasx-origin relationship without content (empty file or a plain text file containing the text "Intentionally empty"),
-* *aasx/data.<extension>* should be the target of the aas-spec relationship, where <__extension__> is for example "xml" or "json", based on the type of serialization,
+* *aasx/data.<extension>* should be the target of the aas-spec relationship, where <__extension__> is for example "xml" or "json" or - depending on the context - the extension is "aas.xml" or "aas.json", based on the type of serialization,
 * a serialization of the same data in several serialization formats (for example xml and json) stored in the same AASX package might also exist; they can be stored in parallel using the aforementioned extensions and appropriate ECMA-376 Content Types (MIME type) and require the creation of the appropriate *aas-suppl* relationships for both of these files, targeting the supplementary files.
 
 <<aasx-file-structure>> shows the overall physical model, i.e. the file structure of an AASX package.
