@@ -17,16 +17,4 @@ exclude:
       - CONTRIBUTING.md
       - LICENSE.txt
       - README.md
-      - AasxFileServerServiceSpecification
-      - AssetAdministrationShellRegistryServiceSpecification
-      - AssetAdministrationShellRepositoryServiceSpecification
-      - AssetAdministrationShellServiceSpecification
-      - ConceptDescriptionServiceSpecification
-      - DINSPEC16593-Schemas
-      - DiscoveryServiceSpecification
-      - Entire-API-Collection
-      - Part1-MetaModel-Schemas
-      - Part2-API-Schemas
-      - SubmodelRegistryServiceSpecification
-      - SubmodelRepositoryServiceSpecification
-      - SubmodelServiceSpecification
+      - examples
