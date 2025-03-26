@@ -54,8 +54,6 @@ In general, normative clauses are characterized by adding the prefix (normative)
 
 Finally, xref:summary-and-outlook.adoc[] summarizes the content and gives an outlook on future work.
 
-The Annex contains additional background information on the exchange format (Annex xref:annex/background.adoc[]).
-
 Metamodel changes compared to previous versions are described in xref:changelog.adoc[].
 
 The bibliography can be found in xref:bibliography.adoc[].
