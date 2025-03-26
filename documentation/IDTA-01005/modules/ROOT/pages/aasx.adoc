@@ -202,11 +202,11 @@ Typical formats contained are XML and/or JSON.
 Targets any additional file, which is referenced from within the data of an AAS via a relative URI reference in the _File_ submodel element.
 
 ====
-Note 1: the internal relative paths shall be relative to the parent directory of the _rels folder (see ISO/IEC 29500-2).
+Note 1: the internal relative paths shall be relative to the parent directory of the _rels_ folder (see ISO/IEC 29500-2)
 ====
 
 ====
-Note 2: blobs as defined via submodel Element _Blob_ are not stored as supplemental files within the package.
+Note 2: blobs as defined via submodel Element _Blob_ are not stored as supplemental files within the package
 ====
 
 ====
@@ -240,7 +240,7 @@ The file "Thumbnail.png" is referenced in file ".rels" as target for relationshi
 It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in <<aasx-rels>> and follows the file name conventions as defined above.
 In this example, it is assumed that the AAS specification files are serialized in XML.
 The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description.
-Three files are referenced within the submodels; they are added to the package in the folder suppl.
+Three files are referenced within the submodels; they are added to the package in the folder "suppl".
 The files can be referenced from both AAS, i.e. from both submodels.
 The same accounts for the concept description that can be used in both submodels.
 The submodels can be part of both AAS, if needed.
