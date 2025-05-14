@@ -26,4 +26,4 @@ The following steps need to be executed to enable an exchange between partners:
 
 .Part 5: File Exchange Type of Information Exchange via Asset Administration Shells
 [[aas-info-exchange-types]]
-image::aas-info-exchange-types.jpeg[]
+image::aas-info-exchange-types.jpg[]
