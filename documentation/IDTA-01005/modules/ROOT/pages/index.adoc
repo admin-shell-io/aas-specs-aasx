@@ -14,7 +14,7 @@ Previous version: 3.0.1
 
 == Notice
 
-Publisher: Industrial Digital Twin Association e.V. (IDTA)
+Copyright: Industrial Digital Twin Association e.V. (IDTA)
 
 IDTA Document Number: IDTA-01005-3-1
 
