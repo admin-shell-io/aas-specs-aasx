@@ -1,0 +1,21 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+= Summary and Outlook
+
+This document (Part 5 of the document series "Specification of the Asset Administration Shell") defines the AASX package file format for file exchange of Administration Shells based on the Open Package Conventions.
+
+Additional parts of the document series cover (see xref:bibliography.adoc#bib10[[10\]]):
+
+* the information meta model of the Asset Administration Shell (Part 1, xref:bibliography.adoc#bib9[[9\]]),
+* interfaces and APIs for accessing the information of Asset Administration Shells (access, modify, query, and execute information and active functionality; Part 2, xref:bibliography.adoc#bib10[[10\]]),
+* data specification templates (Part 3 series),
+* security aspects of the Asset Administration Shell (Part 4)
+

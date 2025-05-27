@@ -1,0 +1,170 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/).
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+
+= Terms, Definitions and Abbreviations
+
+== Terms and Definitions
+
+====
+[.underline]#Please note#: the definitions of terms are only valid in a certain context.
+This glossary applies only within the context of this document.
+For a more extensive list, please refer to Part 1 of the document series.
+====
+
+If available, definitions were taken from IEC 63278-1 Edition 1.0 2023-12.
+
+*access control*::
+
+protection of system resources against unauthorized access; a process by which use of system resources is regulated according to a security policy and is permitted by only authorized entities (users, programs, processes, or other systems) according to that policy
+
+_[SOURCE: IEC TS 62443-1-1]_
+
+*application*::
+
+software functional element specific to the solution of a problem in industrial-process measurement and control
+
+====
+Note 1 to entry: an application can be distributed among resources and may communicate with other applications.
+====
+
+_[SOURCE: IEC TR 62390:2005-01, 3.1.2]_
+
+*asset*::
+
+entity owned by or under the custodial duties of an organization, which has either a perceived or actual value to the organization
+
+====
+Note 1 to entry: an asset can be single entity, a collection of entities, an assembly of entities or a composition of entities.
+====
+
+====
+EXAMPLE 1: examples for physical entities are equipment, raw material, parts components and pieces, supplies, consumables, physical products, and waste.
+====
+
+====
+EXAMPLE 2: software is an example of a digital asset.
+====
+
+====
+EXAMPLE 3: a software license is an example of an intangible asset.
+====
+
+_[SOURCE: IEC 63278-1:2023, editorial changes]_
+
+*Asset Administration Shell (AAS)*::
+
+standardized digital representation of an asset
+
+====
+Note 1 to entry: Asset Administration Shell and Administration Shell are used synonymously.
+====
+
+_[SOURCE: IEC 63278-1:2023, note added]_
+
+*digital representation*::
+
+information and services representing an entity from a given viewpoint
+
+====
+EXAMPLE 1: examples of information are properties (e.g. maximum temperature), actual parameters (e.g. actual velocity), events (e.g. notification of status change), schematics (electrical), and visualization information (2D and 3D drawings).
+====
+
+====
+EXAMPLE 2: examples of services are asset services (for example providing the history of the configuration data or providing the actual velocity) and asset related services (for example providing a simulation).
+====
+
+====
+EXAMPLE 3: examples of viewpoints are mechanical, electrical, or commercial characteristics.
+====
+
+_[SOURCE: IEC 63278-1:2023, editorial changes]_
+
+*identifier (ID)*::
+
+identity information that unambiguously distinguishes one entity from another one in a given domain
+
+====
+Note 1 to entry: there are specific identifiers, e.g. UUID Universal unique identifier, IEC 15418 (GS1).
+====
+
+_[SOURCE: Glossary Industrie 4.0]_
+
+*Submodel*::
+
+representation of an aspect of an _asset_
+
+_[SOURCE: IEC 63278-1:2023]_
+
+*SubmodelElement*::
+
+element of a _Submodel_
+
+_[SOURCE: IEC 63278-1:2023]_
+
+*Submodel template*::
+
+_template_ for the representation of an aspect of an _asset_
+
+_[SOURCE: IEC 63278-1:2023]_
+
+*Submodel template element*::
+
+element of a _Submodel template_
+
+_[SOURCE: IEC 63278-1:2023]_
+
+==  Abbreviations
+
+====
+Note: not all abbreviations are used in this document.
+The list of abbreviations is identical in the different parts of the document series "Specification of the Asset Administration Shell".footnote:[There might be smaller differences in the different parts with respect to which abbreviations are listed.]
+====
+
+[cols="21%,79%",options="header"]
+|===
+|*Abbreviation* |*Description*
+|AAS |Asset Administration Shell
+|AASX |Package file format for the Asset Administration Shell
+|AML |AutomationML
+|API |Application Programming Interface
+|BITKOM |Bundesverband Informationswirtschaft, Telekommunikation und neue Medien e. V.
+|BLOB |Binary Large Object
+|CDD |Common Data Dictionary
+|GUID |Globally unique identifier
+|I4.0 |Industrie 4.0
+|ID |Identifier
+|IDTA |Industrial Digital Twin Association
+|IEC |International Electrotechnical Commission
+|IRDI |International Registration Data Identifier
+|IRI |Internationalized Resource Identifier
+|ISO |International Organization for Standardization
+|JSON |JavaScript Object Notation
+|MIME |Multipurpose Internet Mail Extensions
+|OPC |Open Packaging Conventions (ECMA-376, ISO/IEC 29500-2)
+|OPC UA |OPC Unified Architecture
+|PDF |Portable Document Format
+|RAMI4.0 |Reference Architecture Model Industrie 4.0
+|RDF |Resource Description Framework
+|REST |Representational State Transfer
+|RFC |Request for Comment
+|UML |Unified Modeling Language
+|URI |Uniform Resource Identifier
+|URL |Uniform Resource Locator
+|URN |Uniform Resource Name
+|UTC |Universal Time Coordinated
+|VDE |Verband der Elektrotechnik, Elektronik und Informationstechnik e.V.
+|VDI |Verein Deutscher Ingenieure e.V.
+|VDMA |Verband Deutscher Maschinen- und Anlagenbau e.V.
+|W3C |World Wide Web Consortium
+|XML |eXtensible Markup Language
+|ZIP |archive file format that supports lossless data compression
+|ZVEI |Zentralverband Elektrotechnik- und Elektronikindustrie e. V.
+|===

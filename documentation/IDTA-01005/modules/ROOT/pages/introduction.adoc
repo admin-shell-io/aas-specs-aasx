@@ -1,0 +1,29 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+= Introduction
+
+The document series "Details of the Asset Administration Shell" specifies the different needs of implementing Asset Administration Shells in an Industry 4.0 environment.
+A corresponding IEC series is in development, see xref:bibliography.adoc#bib13[[13\]].
+
+Besides a technology-neutral specification of the information model in UML, several different formats are provided to exchange Asset Administration Shells: XML, JSON, RDF, AutomationML, as well as an OPC UA information model.
+
+<<aas-info-exchange-types>> shows the different ways of exchanging information via Asset Administration Shells.
+This part of the "Details of the Asset Administration Shell" series, Part 5, deals with type 1: file exchange.
+The following steps need to be executed to enable an exchange between partners:
+
+. definition of the Asset Administration Shell in a selected format, for example XML (see xref:bibliography.adoc#bib9[[9\]]),
+. selecting the additional files that are referenced in submodels of the Asset Administration Shell and should also be exchanged,
+. provision of the Asset Administration Shell together with the selected files in a standardized exchange format, the AASX package format as specified in this document,
+. defining a secure way to exchange the file, for example via secure file download on a web server xref:bibliography.adoc#bib12[[12\]].
+
+.Part 5: File Exchange Type of Information Exchange via Asset Administration Shells
+[[aas-info-exchange-types]]
+image::aas-info-exchange-types.jpg[]

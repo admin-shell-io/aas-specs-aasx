@@ -1,0 +1,10 @@
+name: IDTA-01005
+
+title: 'Part 5: Package File Format (AASX)'
+version: 'v3.1'
+display_version: 'in progress'
+prerelease: true
+
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
