@@ -15,6 +15,12 @@ SPDX-License-Identifier: CC-BY-4.0
 This annex lists the changes from version to version of the file exchange format together with major changes in the overall document.
 Non-backward compatible changes (nc) are marked as such.
 
+== Changes V3.2 vs. V3.1
+
+Major Changes:
+
+* CHANGE: the provisory MIME-Type application/asset-administration-shell-package was substituted with the newly registered IANA MIME-Type application/aas+zip (https://github.com/admin-shell-io/aas-specs-aasx/issues/41[#41]),  
+
 == Changes V3.1 vs. V3.0.1
 
 Major Changes:
