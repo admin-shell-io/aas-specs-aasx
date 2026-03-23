@@ -68,7 +68,7 @@ The following name spaces are defined:
 
 [cols="18%,82%",options="header"]
 |===
-|*Namespace* |*Value*
+h|Namespace h|Value
 |`<rel>` a|`\http://schema.openxmlformats.org/package/2006/relationships`
 |`<rel_aas>` a|`\http://admin-shell.io/aasx/relationships`
 
@@ -80,22 +80,19 @@ and
 Each relationship typefootnote:[To avoid the long names of the relationship types, the short name is used in the text.] as denoted in <<aasx-rels>> is described in the following.
 
 [.table-with-appendix-table]
-[cols="30%h,70%"]
-|===
-|*Relationship Type* |
-|*Source File of Relationship Type:* |*--*
-|*Namespace:* |`<rel>`
-|===
-[.appendix-table]
 [cols="30%,10%,60%",options="header"]
 |===
-|*Relationship Type* |*Card.* |*Description*
-|*metadata/thumbnail* |0..1 a|
+h|Relationship Type 2+h|
+h|Source File of Relationship Type: 2+h|--
+h|Namespace: 2+|`<rel>`
+
+h|Relationship Type h|Card. h|Description
+h|metadata/thumbnail |0..1 a|
 Required to define a thumbnail for that package (e.g. picture of the administrated device).
 
 The thumbnail picture can be shown instead of the package’s icon based on the extension and/or content type.
 
-|*metadata/core-properties* |0..1 a|
+h|metadata/core-properties |0..1 a|
 There is a schema for describing the package through "core properties," which uses selected Dublin Core metadata elements in addition to some Open Packaging Conventions-specific elements.
 
 The core properties do not describe the Administration Shell, but the package itself.
@@ -103,7 +100,7 @@ Some elements of the core properties may be similar/equal to elements of the Adm
 
 Some core properties are: Title, Subject, Creator, Keywords, Description, LastModifiedBy, Revision, LastPrinted, Created, Modified, Category, Identifier, ContentType, Language, Version, ContentStatus.
 
-|*digital-signature/origin* |0..1 a|
+h|digital-signature/origin |0..1 a|
 Required if you need to sign files and relationships inside the package.
 Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, etc.).
 
@@ -113,7 +110,7 @@ Note: see <<digital-signatures>> for more information.
 ====
 
 
-|*aasx-origin* |1 a|
+h|aasx-origin |1 a|
 This relationship targets an aasx origin file which shall be an empty file or a plain text file containing the text "Intentionally empty"footnote:[This will allow extensions of the AASX package format in future versions of this specification.].
 
 It is the entry point for all aas specific relationships and files inside the package.
@@ -122,17 +119,14 @@ The source of the aasx origin relationship must be the package root.
 |===
 
 [.table-with-appendix-table]
-[cols="30%h,70%"]
-|===
-|*Relationship Type* |
-|*Source File of Relationship Type:* |`<rel>/digital-signature/origin`
-|*Namespace:* |`<rel>` |
-|===
-[.appendix-table]
 [cols="30%,10%,60%",options="header"]
 |===
-|*Relationship Type* |*Card.* |*Description*
-|*digital-signature/signature* |1..* a|
+h|Relationship Type 2+|
+h|Source File of Relationship Type: 2+|`<rel>/digital-signature/origin`
+h|Namespace: 2+|`<rel>` 
+
+h|Relationship Type h|Card. h|Description
+h|digital-signature/signature |1..* a|
 Required if you need to sign files and relationships inside the package.
 Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, …).
 
@@ -145,17 +139,14 @@ Note: see <<digital-signatures>> for more information.
 |===
 
 [.table-with-appendix-table]
-[cols="30%h,70%"]
-|===
-|*Relationship Type* |
-|*Source File of Relationship Type:* |`<rel>/digital-signature/signature`
-|*Namespace:* |`<rel>` |
-|===
-[.appendix-table]
 [cols="30%,10%,60%",options="header"]
 |===
-|*Relationship Type* |*Card.* |*Description*
-|*digital-signature/certificate* |0..1 a|
+h|Relationship Type 2+|
+h|Source File of Relationship Type: 2+|`<rel>/digital-signature/signature`
+h|Namespace: 2+|`<rel>` 
+
+h|Relationship Type h|Card. h|Description
+h|digital-signature/certificate |0..1 a|
 Required if you need to sign files and relationships inside the package.
 Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, …).
 
@@ -168,17 +159,14 @@ Note: see <<digital-signatures>> for more information.
 |===
 
 [.table-with-appendix-table]
-[cols="30%h,70%"]
-|===
-|*Relationship Type* |
-|*Source File of Relationship Type:* |`<rel_aas>/aasx-origin`
-|*Namespace:* |`<rel_aas>` |
-|===
-[.appendix-table]
 [cols="30%,10%,60%",options="header"]
 |===
-|*Relationship Type* |*Mandatory* |*Description*
-|*aas-spec* |1..* a|
+h|Relationship Type 2+|
+h|Source File of Relationship Type: 2+|`<rel_aas>/aasx-origin`
+h|Namespace: 2+|`<rel_aas>` 
+
+h|Relationship Type h|Mandatory h|Description
+h|aas-spec |1..* a|
 Targets the file that contains the structure/specification of one or more identifiable elements (such as AAS, Submodel or ConceptDescription).
 
 Different formats of the same information can be contained in the container.
@@ -188,17 +176,14 @@ Typical formats contained are XML and/or JSON.
 |===
 
 [.table-with-appendix-table]
-[cols="30%h,70%"]
-|===
-|*Relationship Type* |
-|*Source File of Relationship Type:* |`<rel_aas>/aas-spec`
-|*Namespace:* |`<rel_aas>` |
-|===
-[.appendix-table]
 [cols="30%,10%,60%",options="header"]
 |===
-|*Relationship Type* |*Mandatory* |*Description*
-|*aas-suppl* |0..1 a|
+h|Relationship Type 2+|
+h|Source File of Relationship Type: 2+|`<rel_aas>/aas-spec`
+h|Namespace: 2+|`<rel_aas>` 
+
+h|Relationship Type h|Mandatory h|Description
+h|aas-suppl |0..1 a|
 Targets any additional file, which is referenced from within the data of an AAS via a relative URI reference in the _File_ submodel element.
 
 ====
