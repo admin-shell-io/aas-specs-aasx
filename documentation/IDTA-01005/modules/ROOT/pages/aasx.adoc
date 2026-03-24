@@ -43,7 +43,7 @@ The Asset Administration Shell Package (AASX) format is derived from the Open Pa
 
 * package format and rules according to ISO/IEC 29500-2:2012; any derivate format from this standard (such as the AASX format) requires the definition of a logical model, a physical model, and a security model; the specific conventions are described in the next subsections.
 * file extension for the AASX format *.aasx*,
-* MIME-type for the AASX format: application/asset-administration-shell-packagefootnote:[The current MIME-type is provisory and needs to be requested officially.],
+* MIME-type for the AASX format: application/aas+zipfootnote:[This MIME-type is registered at IANA:  https://www.iana.org/assignments/media-types/media-types.xhtml.],
 * *icon* for the AASXfootnote:[No official icon for aasx extension available so far.],
 * identification of the AASX format by the file extension and content (MIME) type, which can be identified content-wise when reading the first relationship file `/_rels/.rels` (as defined in Open Packaging Conventions) and looking for a relationship type `\http://admin-shell.io/aasx/relationships/aasx-origin` (which is the entry point for the logical model of the Asset Administration Shell),
 * note that the following paths and filenames in the package are already reserved by the Open Packaging Conventions specification and shall therefore not be used for any derivative format: `/[Content_Types].xml`; `/_rels/.rels`; `/<file_path>/_rels/<filename>.rels` (where `<filename>` is a file in the package that is source of relationships and `<file_path>` is the path to that file),
