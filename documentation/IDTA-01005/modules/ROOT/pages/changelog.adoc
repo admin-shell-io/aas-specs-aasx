@@ -21,6 +21,13 @@ Major Changes:
 
 * CHANGE: the provisory MIME-Type application/asset-administration-shell-package was substituted with the newly registered IANA MIME-Type application/aas+zip (https://github.com/admin-shell-io/aas-specs-aasx/issues/41[#41]),  
 
+Minor Changes:
+
+* REMOVED: mentioning of AAS formats AutomationML and OPC UA since not contained any longer in AAS specification itself (https://github.com/admin-shell-io/aas-specs-aasx/issues/40[#40])
+* REMOVED: abbreviations not used in specification (https://github.com/admin-shell-io/aas-specs-aasx/issues/40[#40])
+* CHANGED: editorial changes (https://github.com/admin-shell-io/aas-specs-aasx/issues/39[#39])
+
+
 == Changes V3.1 vs. V3.0.1
 
 Major Changes:

@@ -13,7 +13,7 @@ SPDX-License-Identifier: CC-BY-4.0
 The document series "Details of the Asset Administration Shell" specifies the different needs of implementing Asset Administration Shells in an Industry 4.0 environment.
 A corresponding IEC series is in development, see xref:bibliography.adoc#bib13[[13\]].
 
-Besides a technology-neutral specification of the information model in UML, several different formats are provided to exchange Asset Administration Shells: XML, JSON, RDF, AutomationML, as well as an OPC UA information model.
+Besides a technology-neutral specification of the information model in UML, several different formats are provided to exchange Asset Administration Shells: XML, JSON, and RDF.
 
 <<aas-info-exchange-types>> shows the different ways of exchanging information via Asset Administration Shells.
 This part of the "Details of the Asset Administration Shell" series, Part 5, deals with type 1: file exchange.

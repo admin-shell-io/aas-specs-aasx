@@ -133,13 +133,9 @@ The list of abbreviations is identical in the different parts of the document se
 |*Abbreviation* |*Description*
 |AAS |Asset Administration Shell
 |AASX |Package file format for the Asset Administration Shell
-|AML |AutomationML
-|API |Application Programming Interface
-|BITKOM |Bundesverband Informationswirtschaft, Telekommunikation und neue Medien e. V.
 |BLOB |Binary Large Object
 |CDD |Common Data Dictionary
 |GUID |Globally unique identifier
-|I4.0 |Industrie 4.0
 |ID |Identifier
 |IDTA |Industrial Digital Twin Association
 |IEC |International Electrotechnical Commission
@@ -149,22 +145,14 @@ The list of abbreviations is identical in the different parts of the document se
 |JSON |JavaScript Object Notation
 |MIME |Multipurpose Internet Mail Extensions
 |OPC |Open Packaging Conventions (ECMA-376, ISO/IEC 29500-2)
-|OPC UA |OPC Unified Architecture
 |PDF |Portable Document Format
-|RAMI4.0 |Reference Architecture Model Industrie 4.0
 |RDF |Resource Description Framework
-|REST |Representational State Transfer
 |RFC |Request for Comment
 |UML |Unified Modeling Language
 |URI |Uniform Resource Identifier
 |URL |Uniform Resource Locator
 |URN |Uniform Resource Name
 |UTC |Universal Time Coordinated
-|VDE |Verband der Elektrotechnik, Elektronik und Informationstechnik e.V.
-|VDI |Verein Deutscher Ingenieure e.V.
-|VDMA |Verband Deutscher Maschinen- und Anlagenbau e.V.
-|W3C |World Wide Web Consortium
 |XML |eXtensible Markup Language
 |ZIP |archive file format that supports lossless data compression
-|ZVEI |Zentralverband Elektrotechnik- und Elektronikindustrie e. V.
 |===
