@@ -20,6 +20,8 @@ The following release contains the latest version of the AAS schemas
  (see also the [releases](https://github.com/admin-shell-io/aas-specs-aasx/releases) 
 section of this repository):
 
+* [3.2.0](https://github.com/admin-shell-io/aas-specs-aasx/releases/tag/v3.2.0) is the latest release for the V3.2.0 version of the AASX Package File Format, the normative sources for the published document "Specification of the Asset Administration Shell: Part 5 - Version 3.2.0". Use this release if you want to work with the latest specified AAS version.
+
 * [3.1.0](https://github.com/admin-shell-io/aas-specs-aasx/releases/tag/v3.1.0)
 is the latest release for the `V3.1.0` version of the AASX Package File Format, 
 containing the normative sources for the published document

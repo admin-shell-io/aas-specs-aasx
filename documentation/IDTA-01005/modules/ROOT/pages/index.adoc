@@ -8,24 +8,24 @@ This specification is part of the https://industrialdigitaltwin.org/en/content-h
 
 == Version
 
-This is version 3.1 of the specification IDTA-01005.
+This is version 3.2 of the specification IDTA-01005.
 
-Previous version: 3.0.1
+Previous version: 3.1
 
 == Notice
 
 Copyright: Industrial Digital Twin Association e.V. (IDTA)
 
-IDTA Document Number: IDTA-01005-3-1
+IDTA Document Number: IDTA-01005-3-2
 
-DOI: https://doi.org/10.62628/IDTA.01005-3-1
+DOI: https://doi.org/10.62628/IDTA.01005-3-2
 
 This work is licensed under a
 https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License].
 
 SPDX-License-Identifier: CC-BY-4.0
 
-May 2025
+July 2027
 
 == How to Get in Contact
 
@@ -42,8 +42,10 @@ Feedback:
 == Editorial Notes
 
 === History
+This version, version 3.1, was produced from May 2025 on by the Workstream "Specifications of the Asset Administration Shell" of the "Open Technology" working group of the Industrial Digital Twin Association (IDTA).
 
-This version, version 3.1, was produced from February 2023 to June 2024 by the Workstream "Specifications of the Asset Administration Shell" of the "Open Technology" working group of the Industrial Digital Twin Association (IDTA).
+Version 3.1 was finalized in May 2025 by the Workstream "Specifications of the Asset Administration Shell" of the "Open Technology" working group of the Industrial Digital Twin Association (IDTA).
+It is the first published as html.
 
 Version 3.0 of this document is the continuation of the definition of the AASX Package Exchange Format that was originally part of Part 1 of the document series "Details of the Asset Administration Shell".
 Part 1 was split after V3.0RC02.
