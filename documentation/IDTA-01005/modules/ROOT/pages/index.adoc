@@ -18,14 +18,14 @@ Copyright: Industrial Digital Twin Association e.V. (IDTA)
 
 IDTA Document Number: IDTA-01005-3-2
 
-DOI: **TO BE ADDED**
+DOI: https://doi.org/10.62628/IDTA.01005-3-2
 
 This work is licensed under a
 https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License].
 
 SPDX-License-Identifier: CC-BY-4.0
 
-**DATE TO BE ADDED**
+July 2027
 
 == How to Get in Contact
 

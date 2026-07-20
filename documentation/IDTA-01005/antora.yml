@@ -2,8 +2,6 @@ name: IDTA-01005
 
 title: 'Part 5: Package File Format (AASX)'
 version: 'v3.2'
-display_version: 'v3.2'
-prerelease: false
 
 start_page: ROOT:index.adoc
 nav:
